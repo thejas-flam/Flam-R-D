@@ -12,41 +12,44 @@
         <!--App View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="AppViewController" id="BYZ-38-t0r" customClass="AppViewController" customModule="InterviewTasks" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AppViewController" id="BYZ-38-t0r" customClass="AppViewController" customModule="FlamR" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CHh-cj-L1Z">
-                                <rect key="frame" x="0.0" y="59" width="393" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Jib-Ia-PiX"/>
-                                </connections>
-                            </textField>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="FXr-IU-1wM">
-                                <rect key="frame" x="0.0" y="93" width="393" height="725"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="7L2-aR-HNw"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="3u1-Co-qkT"/>
-                                </connections>
-                            </tableView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0ql-fd-1W6">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="FXr-IU-1wM">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="725"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="BYZ-38-t0r" id="7L2-aR-HNw"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="3u1-Co-qkT"/>
+                                        </connections>
+                                    </tableView>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CHh-cj-L1Z">
+                                        <rect key="frame" x="0.0" y="725" width="393" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="Jib-Ia-PiX"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FXr-IU-1wM" secondAttribute="trailing" id="0JL-Kr-TT3"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FXr-IU-1wM" secondAttribute="bottom" id="BKK-7B-AsF"/>
-                            <constraint firstItem="FXr-IU-1wM" firstAttribute="top" secondItem="CHh-cj-L1Z" secondAttribute="bottom" id="FE1-0M-Ksg"/>
-                            <constraint firstItem="CHh-cj-L1Z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XHc-oJ-5Mf"/>
-                            <constraint firstItem="CHh-cj-L1Z" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Yb2-B9-aTN"/>
-                            <constraint firstItem="FXr-IU-1wM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gNC-iG-yCj"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CHh-cj-L1Z" secondAttribute="trailing" id="xp3-fL-DO9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0ql-fd-1W6" secondAttribute="trailing" id="LgV-Av-W4O"/>
+                            <constraint firstItem="0ql-fd-1W6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="M1c-kj-Yh9"/>
+                            <constraint firstItem="0ql-fd-1W6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="UxD-yk-a2N"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0ql-fd-1W6" secondAttribute="bottom" id="csi-W8-V1c"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="holderStack" destination="0ql-fd-1W6" id="dMz-xr-hcn"/>
                         <outlet property="sampleTableView" destination="FXr-IU-1wM" id="S6t-P9-nzS"/>
                         <outlet property="searchField" destination="CHh-cj-L1Z" id="T2r-RC-xb9"/>
                     </connections>

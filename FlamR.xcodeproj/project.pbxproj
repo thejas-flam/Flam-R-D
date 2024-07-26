@@ -16,6 +16,7 @@
 		43780A802C467F6A00F229FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43780A652C4659DF00F229FA /* ViewController.swift */; };
 		43780A832C46A5A100F229FA /* AppUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43780A822C46A5A100F229FA /* AppUserDefaults.swift */; };
 		43780A842C46A5A100F229FA /* AppUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43780A822C46A5A100F229FA /* AppUserDefaults.swift */; };
+		43B84B5A2C53839300C37B52 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B84B592C53839300C37B52 /* Extensions.swift */; };
 		84230DEF2BB5885F008B90D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84230DEE2BB5885F008B90D2 /* AppDelegate.swift */; };
 		84230DF32BB5885F008B90D2 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84230DF22BB5885F008B90D2 /* AppViewController.swift */; };
 		84230DF62BB5885F008B90D2 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 84230DF52BB5885F008B90D2 /* Base */; };
@@ -75,7 +76,7 @@
 		43780A6F2C4659E000F229FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43780A702C4659E000F229FA /* InterviewTasksClip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = InterviewTasksClip.entitlements; sourceTree = "<group>"; };
 		43780A822C46A5A100F229FA /* AppUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUserDefaults.swift; sourceTree = "<group>"; };
-		43A5F4432C49215100B3477A /* FlamR.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = FlamR.entitlements; sourceTree = "<group>"; };
+		43B84B592C53839300C37B52 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		84230DEB2BB5885F008B90D2 /* FlamR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlamR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84230DEE2BB5885F008B90D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84230DF22BB5885F008B90D2 /* AppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
@@ -139,7 +140,6 @@
 		43A5F4402C4905D200B3477A /* App */ = {
 			isa = PBXGroup;
 			children = (
-				43A5F4432C49215100B3477A /* FlamR.entitlements */,
 				84230E1E2BB58A1E008B90D2 /* Cells */,
 				84230DEE2BB5885F008B90D2 /* AppDelegate.swift */,
 				84230DF22BB5885F008B90D2 /* AppViewController.swift */,
@@ -149,6 +149,7 @@
 				84230DFC2BB58863008B90D2 /* Info.plist */,
 				43780A822C46A5A100F229FA /* AppUserDefaults.swift */,
 				435B68E32C4ECC3500FED4D3 /* Recorder.swift */,
+				43B84B592C53839300C37B52 /* Extensions.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -385,6 +386,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				435B68E42C4ECC3500FED4D3 /* Recorder.swift in Sources */,
+				43B84B5A2C53839300C37B52 /* Extensions.swift in Sources */,
 				84230E222BB58A4E008B90D2 /* SampleCell.swift in Sources */,
 				84230DF32BB5885F008B90D2 /* AppViewController.swift in Sources */,
 				43780A832C46A5A100F229FA /* AppUserDefaults.swift in Sources */,
@@ -646,7 +648,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = FlamR/FlamR.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = K6FZYUHLAF;
@@ -677,7 +679,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = FlamR/FlamR.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = K6FZYUHLAF;

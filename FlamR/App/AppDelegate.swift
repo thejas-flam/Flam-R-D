@@ -31,6 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = viewController
         window?.makeKeyAndVisible()
+        registerForPushNotifications()
         #endif
         
         if let userActivityDictionary = launchOptions?[.userActivityDictionary] as? [String: Any],
@@ -50,9 +51,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         else {
             print("dictionary : \(launchOptions?[.userActivityDictionary])")
         }
-                
-        
-        registerForPushNotifications()
         
         return true
     }
