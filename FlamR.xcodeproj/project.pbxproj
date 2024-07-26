@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		435B68E42C4ECC3500FED4D3 /* Recorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435B68E32C4ECC3500FED4D3 /* Recorder.swift */; };
+		435B68E52C4ECC3500FED4D3 /* Recorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435B68E32C4ECC3500FED4D3 /* Recorder.swift */; };
 		43780A692C4659DF00F229FA /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 43780A682C4659DF00F229FA /* Base */; };
 		43780A6B2C4659E000F229FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43780A6A2C4659E000F229FA /* Assets.xcassets */; };
 		43780A732C4659E000F229FA /* FlamRClip.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = 43780A5F2C4659DF00F229FA /* FlamRClip.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -65,6 +67,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		435B68E32C4ECC3500FED4D3 /* Recorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recorder.swift; sourceTree = "<group>"; };
 		43780A5F2C4659DF00F229FA /* FlamRClip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlamRClip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43780A652C4659DF00F229FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		43780A682C4659DF00F229FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/AppClipUI.storyboard; sourceTree = "<group>"; };
@@ -133,13 +136,6 @@
 			path = InterviewTasksClip;
 			sourceTree = "<group>";
 		};
-		43A5F43F2C4905C400B3477A /* AppClip */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = AppClip;
-			sourceTree = "<group>";
-		};
 		43A5F4402C4905D200B3477A /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +148,7 @@
 				84230DF92BB58863008B90D2 /* LaunchScreen.storyboard */,
 				84230DFC2BB58863008B90D2 /* Info.plist */,
 				43780A822C46A5A100F229FA /* AppUserDefaults.swift */,
+				435B68E32C4ECC3500FED4D3 /* Recorder.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -182,7 +179,6 @@
 			isa = PBXGroup;
 			children = (
 				43A5F4402C4905D200B3477A /* App */,
-				43A5F43F2C4905C400B3477A /* AppClip */,
 			);
 			path = FlamR;
 			sourceTree = "<group>";
@@ -380,6 +376,7 @@
 				43780A842C46A5A100F229FA /* AppUserDefaults.swift in Sources */,
 				43780A802C467F6A00F229FA /* ViewController.swift in Sources */,
 				43780A7B2C467AF900F229FA /* AppDelegate.swift in Sources */,
+				435B68E52C4ECC3500FED4D3 /* Recorder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,6 +384,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				435B68E42C4ECC3500FED4D3 /* Recorder.swift in Sources */,
 				84230E222BB58A4E008B90D2 /* SampleCell.swift in Sources */,
 				84230DF32BB5885F008B90D2 /* AppViewController.swift in Sources */,
 				43780A832C46A5A100F229FA /* AppUserDefaults.swift in Sources */,
@@ -471,6 +469,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = InterviewTasksClip/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = FlamR;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera permission required";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = AppClipUI;
@@ -502,6 +501,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = InterviewTasksClip/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = FlamR;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera permission required";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = AppClipUI;
@@ -646,7 +646,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_ENTITLEMENTS = FlamR/FlamR.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = K6FZYUHLAF;
@@ -677,7 +677,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_ENTITLEMENTS = FlamR/FlamR.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = K6FZYUHLAF;
